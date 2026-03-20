@@ -1,0 +1,100 @@
+/* ================================
+   ACCESS DENIED PAGE
+================================ */
+
+.access-denied-page {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f9fafb, #eef2ff);
+  }
+  
+  /* Card */
+  .page-card {
+    max-width: 520px;
+    width: 100%;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .page-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* ICON (CSS SVG) */
+  .page-card .display-1 {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 1rem;
+    font-size: 0; /* hide emoji visually */
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, #fee2e2, #fecaca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* SVG lock / deny icon */
+  .page-card .display-1::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    background: no-repeat center / contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23dc2626' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 9v2m0 4h.01M5 9h14v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9zm2-2a5 5 0 0110 0v2H7V7z'/%3E%3C/svg%3E");
+  }
+  
+  /* Heading */
+  .page-card h2 {
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  /* Description */
+  .page-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #6b7280;
+  }
+  
+  /* Button */
+  .btn-primary-custom {
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    border: none;
+    transition: all 0.25s ease;
+  }
+  
+  .btn-primary-custom:hover {
+    background: linear-gradient(135deg, #4338ca, #4f46e5);
+    transform: translateY(-1px);
+  }
+  
+  /* Mobile */
+  @media (max-width: 576px) {
+    .page-card {
+      padding: 2rem 1.5rem !important;
+    }
+  
+    .page-card .display-1 {
+      width: 72px;
+      height: 72px;
+    }
+  
+    .page-card .display-1::before {
+      width: 34px;
+      height: 34px;
+    }
+  
+    .btn-primary-custom {
+      width: 100%;
+    }
+  }
+  

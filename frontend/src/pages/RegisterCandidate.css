@@ -1,0 +1,134 @@
+/* ================================
+   STEP 2 — LAYOUT & CONTAINER STYLES
+   Register Candidate
+   ================================ */
+
+   .register-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6) var(--space-4);
+    background:
+      radial-gradient(1200px 600px at 20% -10%, rgba(91, 140, 255, 0.12), transparent 60%),
+      radial-gradient(1000px 500px at 90% 10%, rgba(61, 214, 140, 0.1), transparent 55%),
+      var(--color-bg);
+  }
+  
+  .register-card {
+    width: 100%;
+    max-width: 520px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+  
+  .register-card h2 {
+    font-size: var(--font-2xl);
+    text-align: center;
+    margin-bottom: var(--space-2);
+  }
+  
+  /* -------- FORM LAYOUT -------- */
+  .register-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .mb-3 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  
+  /* -------- LABELS -------- */
+  .form-label {
+    font-size: var(--font-sm);
+    font-weight: 500;
+    color: var(--color-text);
+  }
+  
+  /* -------- INPUTS -------- */
+  .form-control,
+  .form-select,
+  textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface-alt);
+    color: var(--color-text);
+    transition:
+      border-color var(--transition-base),
+      box-shadow var(--transition-base),
+      background-color var(--transition-base);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-control::placeholder {
+    color: var(--color-text-subtle);
+  }
+  
+  /* -------- FILE INPUT -------- */
+  input[type="file"].form-control {
+    padding: var(--space-2);
+    cursor: pointer;
+  }
+  
+  /* -------- MUTED TEXT -------- */
+  .text-muted {
+    font-size: var(--font-xs);
+    color: var(--color-text-subtle);
+    margin-top: var(--space-1);
+  }
+  
+  /* -------- PRIMARY BUTTON -------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    min-height: 48px;
+    padding: 0 var(--space-4);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-base);
+    transition:
+      background-color var(--transition-base),
+      transform var(--transition-fast),
+      box-shadow var(--transition-base);
+  }
+  
+  .btn-primary-custom {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(91, 140, 255, 0.35);
+  }
+  
+  .btn-primary-custom:active {
+    transform: translateY(1px);
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  /* -------- FOOTER LINKS -------- */
+  .register-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--font-sm);
+  }
+  
