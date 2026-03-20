@@ -13,6 +13,13 @@ A modern Full Stack Career Portal where:
 Built using React + Spring Boot + MySQL
 
 
+
+🌐 Live Demo
+
+🚀 Frontend: (https://careerr-portal.netlify.app/)
+
+
+
 🛠️ Tech Stack
 🎨 Frontend
 
