@@ -16,7 +16,7 @@ Built using React + Spring Boot + MySQL
 
 🌐 Live Demo
 
-🚀 Frontend: (https://careerr-portal.netlify.app/)
+🚀 Frontend: (https://fantastic-snickerdoodle-83f7ac.netlify.app)
 
 
 
